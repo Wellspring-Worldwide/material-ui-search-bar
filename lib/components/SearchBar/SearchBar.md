@@ -1,5 +1,4 @@
 SearchBar example:
-
 ```
     <SearchBar
       onChange={() => console.log('onChange')}
@@ -8,12 +7,10 @@ SearchBar example:
         margin: '0 auto',
         maxWidth: 800
       }}
-      cancelOnEscape
     />
 ```
 
 SearchBar Disabled example:
-
 ```
     <SearchBar
        onChange={() => console.log('onChange')}
@@ -27,7 +24,6 @@ SearchBar Disabled example:
 ```
 
 Blur on search:
-
 ```
     let ref = React.createRef();
 
