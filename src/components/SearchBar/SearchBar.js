@@ -178,6 +178,7 @@ class SearchBar extends Component {
             disabled: classes.iconButtonDisabled
           }}
           disabled={disabled}
+          focusable={value === ''}
           hidden={value !== ''}
           {...searchButtonInputProps}
         >
@@ -194,6 +195,7 @@ class SearchBar extends Component {
             disabled: classes.iconButtonDisabled
           }}
           disabled={disabled}
+          focusable={value !== ''}
           hidden={value === ''}
           {...cancelButtonInputProps}
         >
