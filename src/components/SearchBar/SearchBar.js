@@ -170,7 +170,7 @@ class SearchBar extends Component {
           />
         </div>
         <IconButton
-          aria-hidden={`${value !== ''}`}
+          aria-hidden={true}
           onClick={this.handleRequestSearch}
           classes={{
             root: classNames(classes.iconButton, classes.searchIconButton, {
@@ -186,7 +186,7 @@ class SearchBar extends Component {
           })}
         </IconButton>
         <IconButton
-          aria-hidden={`${value === ''}`}
+          aria-hidden={true}
           onClick={this.handleCancel}
           classes={{
             root: classNames(classes.iconButton, {
