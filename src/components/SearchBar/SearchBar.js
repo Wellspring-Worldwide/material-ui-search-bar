@@ -170,7 +170,6 @@ class SearchBar extends Component {
           />
         </div>
         <IconButton
-          aria-hidden={true}
           onClick={this.handleRequestSearch}
           classes={{
             root: classNames(classes.iconButton, classes.searchIconButton, {
@@ -179,6 +178,7 @@ class SearchBar extends Component {
             disabled: classes.iconButtonDisabled
           }}
           disabled={disabled}
+          hidden={value !== ''}
           {...searchButtonInputProps}
         >
           {React.cloneElement(searchIcon, {
@@ -186,7 +186,6 @@ class SearchBar extends Component {
           })}
         </IconButton>
         <IconButton
-          aria-hidden={true}
           onClick={this.handleCancel}
           classes={{
             root: classNames(classes.iconButton, {
@@ -195,6 +194,7 @@ class SearchBar extends Component {
             disabled: classes.iconButtonDisabled
           }}
           disabled={disabled}
+          hidden={value === ''}
           {...cancelButtonInputProps}
         >
           {React.cloneElement(closeIcon, {
